@@ -41,7 +41,7 @@ async def _(event):
         "**Process exited with** `status 143`",
         "**Starting process with command** `python3 -m stdborg`",
         "**State changed from starting to up**",
-        "__INFO:WarUserBot:Logged in as 557667062__",
+        "__INFO:WarUserBot:Logged",
         "__INFO:WarUserBot:Successfully loaded all plugins__",
         "**Build Succeeded**",
     ]
