@@ -1,5 +1,3 @@
-
-
 import datetime
 import os
 import random
@@ -7,9 +5,6 @@ import requests
 
 from PIL import Image, ImageDraw, ImageFont
 from TelethonHell.plugins import *
-from . import *
-
-PICS_STR = []
 
 
 @hell_cmd(pattern="logo([\s\S]*)")
