@@ -38,7 +38,7 @@ async def ultiny(event):
     xx = await event.reply(get_string("com_1"))
 
     ik = await reply.download_media()
-    im1 = Image.open("HellConfig/resources/pics/black.jpg")
+    im1 = Image.open("HellConfig/resources/pics/IMG_20230618_174003_342.jpg")
 
     if ik.endswith(".tgs"):
         await con.animated_sticker(ik, "json.json")
