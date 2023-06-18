@@ -33,4 +33,8 @@ async def demn(ult):
         except YouBlockedUserError:
             await msg.edit("Boss! Please Unblock @TempMailGenRoBot")
             return
-        await eor(ult, f"TEMPMAIL ~ `{response.message.message}`\n\n[CLICK TO VIEW INBOX](TempMailGenRoBot.t.me)")
+        await eor(ult, f"TEMPMAIL ~ \n`{response.message.message}`\n\n[CLICK TO VIEW INBOX](TempMailGenRoBot.t.me)")
+
+CmdHelp("tempmail").add_command(
+    "tempmail", "Generate Temporary mail....!"
+).add()
