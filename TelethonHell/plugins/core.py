@@ -40,7 +40,7 @@ async def send(event):
     message_id = event.reply_to_msg_id or event.message.id
     thumb = hell_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention}\n⚡**[WARUSRBOT]**({chnl_link})⚡"
+    omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention}\n⚡**[𝗪𝗔𝗥𝗨𝗦𝗘𝗥𝗕𝗢𝗧]({chnl_link})**⚡"
     the_plugin_file = "./TelethonHell/plugins/{}.py".format(input_str.lower())
     if os.path.exists(the_plugin_file):
         await event.client.send_file(
@@ -104,7 +104,7 @@ async def install(event):
                             b = 1
                         await hell.edit(a)
                     return await hell.edit(
-                        f"✅ **Installed module**:- `{shortname}`\n✨ BY:- {hell_mention}\n{string}\n⚡**[WARUSRBOT]**({chnl_link})⚡",
+                        f"✅ **Installed module**:- `{shortname}`\n✨ BY:- {hell_mention}\n{string}\n⚡**[𝗪𝗔𝗥𝗨𝗦𝗘𝗥𝗕𝗢𝗧]({chnl_link})**⚡",
                         link_preview=False,
                     )
                 return await hell.edit(
