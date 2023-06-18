@@ -1,0 +1,36 @@
+from . import *
+from telethon import events
+from telethon.errors.rpcerrorlist import YouBlockedUserError
+import asyncio
+
+@hell_cmd(pattern="tempmail$")
+async def demn(ult):
+    chat = "@TempMailGenRoBot"
+    msg = await eor(ult, "Generating Temporary Mail Wait 3 to 6 Second...")
+    async with hellbot.conversation(chat) as conv:
+        try:
+            response = conv.wait_event(events.NewMessage(
+                incoming=True,
+                from_users=6280280424
+            ))
+            await conv.send_message("/start")
+            await asyncio.sleep(5)
+            await conv.send_message("📧 Generate Email")
+            response = await response
+
+            # Check if the rows list has enough elements
+            if len(response.reply_markup.rows) > 2:
+                # Check if the buttons list in the third row has enough elements
+                buttons = response.reply_markup.rows[2].buttons
+                if len(buttons) > 0:
+                    link = buttons[0].url
+                else:
+                    link = None  # or handle the case when there are no buttons in the third row
+            else:
+                link = None  # or handle the case when there are not enough rows
+
+            await hellbot.send_read_acknowledge(chat)
+        except YouBlockedUserError:
+            await msg.edit("Boss! Please Unblock @TempMailGenRoBot")
+            return
+        await eor(ult, f"TEMPMAIL ~ `{response.message.message}`\n\n[CLICK TO VIEW INBOX](TempMailGenRoBot.t.me)")
