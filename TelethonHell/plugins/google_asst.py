@@ -65,7 +65,7 @@ async def _(event):
 async def _(hell):
     await eor(
         hell,
-        "**All The Language Codes Can Be Found** ⚡ [Here](https://telegra.ph/SfMæisér--𐌷𐌴ࠋࠋ𐌱𐍈𐌸-𐌾𐌰𐍀𐌾-06-04) ⚡",
+        "**All The Language Codes Can Be Found** ⚡ [Here](https://graph.org/Ɲᴀɴᴏ-06-18) ⚡",
         link_preview=False,
     )
 
