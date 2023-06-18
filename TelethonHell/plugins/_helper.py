@@ -6,7 +6,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from . import *
 
 msg = f"""
-**⚡LEGENDRY AF WARUSERBOT⚡**
+**⚡WARUSERBOT⚡**
   •        [📑 Repo 📑](https://github.com/MeAbhish3k/WARUSERBOT)
   •        [WarBot Network](https://t.me/wrrlegend)
   •  ©️ {hell_channel} ™
