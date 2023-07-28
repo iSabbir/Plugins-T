@@ -96,7 +96,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://graph.org/file/9f1b4d4c70ec35c8b0594.jpg"
+                help_pic = "https://telegra.ph/file/45b1322bd0b1d7043a4e8.png"
             help_msg = f"🔰 **{hell_mention}**\n\n📜 __No.of Plugins__ : `{len(CMD_HELP)}` \n🗂️ __Commands__ : `{len(apn)}`\n🗒️ __Page__ : 1/{veriler[0]}"
             if help_pic == "DISABLE":
                 result = builder.article(
@@ -143,7 +143,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://graph.org/file/b059e4e2e82350f6e15f5.jpg"
+                PIC = "https://telegra.ph/file/47a107157184912b02d2d.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     PIC,
@@ -172,7 +172,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
 
         elif event.query.user_id in auth and query == "pm_warn":
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙒𝙖𝙧𝙐𝙨𝙚𝙧𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"🔥 𝙈𝙖𝙭𝙐𝙨𝙚𝙧𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
             a = gvarstat("PMPERMIT_PIC")
@@ -186,7 +186,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://graph.org/file/b059e4e2e82350f6e15f5.jpg"
+                PIC = "https://telegra.ph/file/47a107157184912b02d2d.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     file=PIC,
@@ -213,7 +213,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             else:
                 result = builder.article(
                     text=HELL_FIRST,
-                    title="Warbot PM Permit",
+                    title="Maxbot PM Permit",
                     buttons=[
                         [custom.Button.inline("📝 Request Approval", data="req")],
                         [custom.Button.inline("🚫 Block", data="heheboi")],
@@ -225,28 +225,28 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id in auth and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚡ LEGENDRY AF WARUSERBOT ⚡**",
+                text=f"**⚡ LEGENDRY AF MAXUSERBOT ⚡**",
                 buttons=[
-                    [Button.url("📑 Repo 📑", "https://github.com/MeAbhish3k/waruserbot")],
-                    [Button.url("WarBot Network", "https://t.me/wrrlegend")],
+                    [Button.url("📑 Repo 📑", "https://github.com/iSabbir/MaxUserbot")],
+                    [Button.url("WarBot Network", "https://t.me/bdbots")],
                 ],
             )
 
         else:
             result = builder.article(
                 "@Waruserbot",
-                text="""**Hey! This is [WARUSERBOT](https://t.me/waruserbot) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [MAXUSERBOT](https://t.me/bdbots) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/waruserbot"),
-                        custom.Button.url("⚡ GROUP ⚡", "https://t.me/waruerbotsupport"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/bdbots"),
+                        custom.Button.url("⚡ GROUP ⚡", "https://t.me/bdbots_chat"),
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/MeAbhish3k/waruserbot"
+                            "✨ REPO ✨", "https://github.com/iSabbir/MaxUserbot"
                         ),
                         custom.Button.url(
-                            "🔰 TUTORIAL 🔰", "https://t.me/waruserbotsupport"
+                            "🔰 TUTORIAL 🔰", "https://t.me/bdbots_chat"
                         ),
                     ],
                 ],
@@ -260,7 +260,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         if event.query.user_id in auth:
             reply_pop_up_alert = "This is for Other Users..."
         else:
-            reply_pop_up_alert = "🔰 This is WarUserBot PM Security to keep away unwanted retards from spamming PM !!"
+            reply_pop_up_alert = "🔰 This is MaxUserBot PM Security to keep away unwanted retards from spamming PM !!"
         await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"req")))
@@ -326,7 +326,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://graph.org/file/9f1b4d4c70ec35c8b0594.jpg"
+                help_pic = "https://telegra.ph/file/47a107157184912b02d2d.jpg"
 
             if help_pic == "DISABLE":
                 await event.edit(
@@ -356,12 +356,12 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen"
             )
             await event.edit(
-                f"**⚜️ WarUserBot Menu Provider is now Closed ⚜️**\n\n**Bot Of :**  {hell_mention}\n\n        [©️ Waruserbot ™️]({chnl_link})",
+                f"**⚜️ MaxUserBot Menu Provider is now Closed ⚜️**\n\n**Bot Of :**  {hell_mention}\n\n        [©️ bdbots ™️]({chnl_link})",
                 buttons=veriler,
                 link_preview=False,
             )
         else:
-            reply_pop_up_alert = "You are not authorized to use me! \n© WarUserBot ™"
+            reply_pop_up_alert = "You are not authorized to use me! \n© MaxUserBot ™"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
             
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"send\((.+?)\)")))
@@ -369,7 +369,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         plugin = event.data_match.group(1).decode("UTF-8")
         ForGo10God, HELL_USER, hell_mention = await client_id(event, event.query.user_id)
         thumb = hell_logo
-        omk = f"**• Plugin name ≈** `{plugin}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[LEGENDARY AF WarUserBot]({chnl_link})** ⚡"
+        omk = f"**• Plugin name ≈** `{plugin}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[LEGENDARY AF MaxUserBot]({chnl_link})** ⚡"
         the_plugin_file = "./TelethonHell/plugins/{}.py".format(plugin.lower())
         butt = custom.Button.inline(f"{hell_emoji} Main Menu {hell_emoji}", data="reopen")
         if os.path.exists(the_plugin_file):
