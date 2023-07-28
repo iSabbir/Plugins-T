@@ -7,8 +7,8 @@ from . import *
 
 msg = f"""
 **⚡WARUSERBOT⚡**
-  •        [📑 Repo 📑](https://github.com/MeAbhish3k/WARUSERBOT)
-  •        [WarBot Network](https://t.me/wrrlegend)
+  •        [📑 Repo 📑](https://github.com/iSabbir/MaxUserbot)
+  •        [WarBot Network](https://t.me/bdbots)
   •  ©️ {hell_channel} ™
 """
 botname = Config.BOT_USERNAME
